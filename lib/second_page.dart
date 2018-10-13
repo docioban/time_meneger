@@ -22,15 +22,31 @@ class Page2 extends StatelessWidget {
             ),
           ),
         ),
-        new Center(
-          child: new Text(
-            "Hello2",
-            style: new TextStyle(
-                fontSize: 30.0,
-                color: Colors.white,
-                fontWeight: FontWeight.bold
+        Padding(
+          padding: const EdgeInsets.only(top: 15.0),
+          child: new IconButton(
+              padding: const EdgeInsets.all(20.0),
+              icon: new Icon(Icons.menu),
+              onPressed: () {
+                print("asdfdas");
+              }),
+        ),
+        new Column(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.only(top: 30.0),
+              child: new Center(
+                child: new Text(
+                  "Second Title",
+                  style: new TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold
+                  ),
+                ),
+              ),
             ),
-          ),
+          ],
         )
       ],
     );
